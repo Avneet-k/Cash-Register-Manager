@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Avneet | Cash Register</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cash Register Manager</h1>
+        <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
+        <div class="first">
+            <div class="heading">Bill Amount:</div>
+            <input type="number" id ="bill-amount">
+            <button class="btn" id = "btn-next">Next</button>
+           
+        </div>
+        <div class="second">
+           <div class="heading">Cash Given:</div>
+            <input type="text" id ="cash-given">
+            <button class="btn" id = "btn-check">check</button>
+        
+        </div>  
+        <div id="error-message"></div>
+
+        <div class="change-return">
+            <div class="heading">Return Change:</div>
+            <div id="output">
+                <table>
+                    <tr>
+                        <th>No Of Notes</th>
+                        <td class="noOfNotes"></td>
+                        <td class="noOfNotes"></td>
+                        <td class="noOfNotes"></td>
+                        <td class="noOfNotes"></td>
+                        <td class="noOfNotes"></td>
+                        <td class="noOfNotes"></td>
+                        <td class="noOfNotes"></td>
+                    </tr>
+                    <tr class="notes-tr">
+                        <th>Notes</th>
+                        <td>2000</td>
+                        <td>500</td>
+                        <td>100</td>
+                        <td>20</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
